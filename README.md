@@ -12,8 +12,8 @@ Trabajamos sobre un PRG concreto de la edición **COPY SOFT** de Oil's Well. Rec
 
 - **Controles — TEST03 PASS:** `W` retrae el brazo, `S` baja/avanza y `A`/`D` mueven lateralmente; ya no es necesario pulsar SPACE para retraer. Se preserva el control original por joystick.
 - **Gráficos — TEST03 PASS:** ocho mapas originales exportados como **ocho frames** a LVLLVL, con la paleta y color RAM correspondientes a cada nivel.
-- **Herramientas de recuperación:** mapas originales completos, vistas de 40×25, 128 caracteres de 8×8, archivos COLOR RAM y visualizadores PRG por nivel.
-- **Pendiente:** validación exhaustiva de todos los PRG visualizadores en VICE, importación/regreso de LVLLVL al motor, y reconstrucción de las capas raster, sprites y elementos dinámicos.
+- **Herramientas de recuperación:** mapas originales completos, vistas de 40×25, 128 caracteres de 8×8, archivos COLOR RAM y mapas editables por nivel.
+- **Pendiente:** reintegración de los niveles editados en LVLLVL al motor jugable y reconstrucción de capas raster, sprites y elementos dinámicos.
 
 El nombre `TEST03` se usó en **dos líneas de trabajo independientes**, por eso este README habla de _TEST03 controles_ y _TEST03 LVLLVL colores_. No confundirlos.
 
@@ -21,57 +21,50 @@ El nombre `TEST03` se usó en **dos líneas de trabajo independientes**, por eso
 
 ```text
 README.md
-docs/
-  MAPA_DE_MEMORIA.md
-  TESTS_Y_ESTADO.md
-  FORMATO_GRAFICOS_Y_LVLLVL.md
-  REPRODUCIR_Y_VALIDAR.md
-  SIGUIENTES_PASOS.md
-  ANALISIS_CONTROL_TEST00.txt
-prg/
-  controles/
+PRG/
+  jugables/
     OILS_WELL_TEST01_TECLADO_WASD_SPACE.prg
     OILS_WELL_TEST02_WASD_AUTO_RETRACCION.prg
     OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg
-  visores-estaticos/
-    OILS_WELL_NIVEL_01_ESTATICO.prg ... NIVEL_08
+LVLLVL/
+  OILS_WELL_8_FRAMES_TEST03_COLORES_POR_NIVEL.json
+  niveles/NIVEL_01.json ... NIVEL_08.json
 mapas/
-  LEVEL_01_MAP_1024_ORIGINAL.bin ... LEVEL_08...
-  LEVEL_01_MAP_40x25.bin ... LEVEL_08...
+  LEVEL_01_MAP_1024_ORIGINAL.bin ... LEVEL_08
+  LEVEL_01_MAP_40x25.bin ... LEVEL_08
 charset/
   TILESET_REAL_128_CHAR_9A00.bin
   TILESET_256_CHAR_PADDED.bin
 colores/
-  LEVEL_01_COLOR_RAM_40x25.bin ... LEVEL_08...
+  LEVEL_01_COLOR_RAM_40x25.bin ... LEVEL_08
   PALLETAS_ORIGINALES.json
-lvllvl/
-  OILS_WELL_8_FRAMES_LVLLVL_TEST03_COLORES_POR_NIVEL.json
-  niveles/LEVEL_01.json ... LEVEL_08.json
 previews/
   VISTA_8_NIVELES.png
   VISTA_PALETAS_8_NIVELES.png
-  niveles/LEVEL_01.png ... LEVEL_08.png
-tools/
-  exportador_historico_test01.py
-  exportador_historico_web/index.html
-  exportador_historico_web/app.js
+docs/
+  TESTS_Y_ESTADO.md
+  CONTROLES_Y_TESTS.md
+  MAPA_DE_MEMORIA.md
+  GUIA_PROGRAMADORES.md
+herramientas/
+  reconstruir_prg_controles.py
 manifest/
   archivos_sha256.json
 ```
 
-**[DESCARGAR TODOS LOS ARCHIVOS DEL PROYECTO (ZIP)](archivos/OIL_WELLS_2026_REPOSITORIO_COMPLETO.zip)**
+**[DESCARGAR EL JUEGO — TEST03 WASD (PRG)](PRG/jugables/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg)**
 
-**Importante:** el ZIP de recuperación puede contener archivos que todavía no estén publicados individualmente en GitHub; consultar el estado de publicación y el manifiesto. El archivo original `oils well.prg` no es una versión modificada propia y no se incluye como «master redistribuible» en este proyecto.
+Los tres PRG jugables están disponibles como archivos independientes en `PRG/jugables/`. El ZIP histórico fue retirado del árbol actual para no conservar visores estáticos. El original `oils well.prg` no se distribuye.
 
 ## Cómo probar el juego con controles nuevos
 
 1. Abrir **VICE x64sc** (modo PAL si es posible).
-2. Cargar `prg/controles/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg`.
+2. Cargar `PRG/jugables/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg`.
 3. Iniciar la carga como PRG C64. Con la carga habitual en BASIC, usar `RUN` si no arranca automáticamente.
 4. Comprobar `W` para retraer, `S` para avanzar y `A`/`D` para mover lateralmente.
 5. Verificar que el joystick original siga funcionando y que SPACE ya no sea necesario para retraer.
 
-**No usar los `NIVEL_XX_ESTATICO.prg` para probar jugabilidad.** Son programas independientes que muestran mapas y charset, sin enemigos, colisiones, animación, sprites ni la lógica del juego.
+**Nota:** los ocho PRG de visores estáticos de niveles fueron retirados. Los tres PRG de `PRG/jugables/` son versiones del juego.
 
 ## Cómo editar los ocho niveles en LVLLVL
 
@@ -116,7 +109,7 @@ La memoria de los gráficos es **solo una parte del motor**. No modificar bytes 
 
 - **TEST03 controles:** PASS informado durante las pruebas, último PRG de jugabilidad documentado.
 - **TEST03 LVLLVL colores:** PASS de exportación con ocho frames y colores por nivel.
-- **8 visores estáticos:** comprobados por simulación de 6510; **no equivalen a PASS visual de VICE**.
+- **Visores estáticos:** archivos históricos retirados de la rama actual; no eran versiones jugables y no contaban con PASS visual en VICE.
 - **Original COPY SOFT:** SHA-256 `26f5ff6d362f5018e74761d73c6e273ecc332d36e0b6992c65126683474520bd`.
 
 Los hashes de los archivos recuperados figuran en `manifest/archivos_sha256.json`. Las transformaciones son propias; el juego base y sus gráficos pertenecen a sus titulares originales. No se reivindica titularidad de los recursos del juego.
@@ -125,20 +118,23 @@ Los hashes de los archivos recuperados figuran en `manifest/archivos_sha256.json
 
 Para retomar el trabajo, empezar por **[TESTS_Y_ESTADO](docs/TESTS_Y_ESTADO.md)** y **[MAPA_DE_MEMORIA](docs/MAPA_DE_MEMORIA.md)**. Preservar los PRG que dieron PASS, crear **TEST04** para cualquier cambio de jugabilidad posterior y verificarlo en VICE antes de sustituir nada. Para gráficos, la referencia actual es **LVLLVL TEST03 colores por nivel**.
 
-## Archivos accesibles directamente desde GitHub
+## Descargar y continuar el proyecto
 
-Además del **ZIP completo** indicado más arriba, estos materiales se publicaron individualmente para facilitar su revisión y modificación por otro programador:
+### Los únicos PRG del repositorio: versiones jugables
 
-- [Proyecto LVLLVL con los ocho niveles y colores TEST03](LVLLVL/OILS_WELL_8_FRAMES_TEST03_COLORES_POR_NIVEL.json).
-- [Ocho JSON separados por nivel](LVLLVL/niveles/), desde `NIVEL_01.json` hasta `NIVEL_08.json`.
-- [Ocho PRG visualizadores estáticos](PRG/visores_estaticos/), uno por nivel (2.198 bytes cada uno).
-- [Guía práctica para programadores](docs/GUIA_PROGRAMADORES.md).
-- [Mapa técnico y direcciones de memoria](docs/MAPA_TECNICO.md).
-- [Controles, versiones y SHA-256](docs/CONTROLES_Y_TESTS.md).
-- [Formato de gráficos y limitaciones](docs/FORMATOS_Y_LIMITACIONES.md).
-- [Plan de mejoras](docs/ROADMAP.md).
-- [Reconstructor verificado de TEST01/TEST02/TEST03](herramientas/reconstruir_prg_controles.py).
+- [TEST01 — WASD y SPACE](PRG/jugables/OILS_WELL_TEST01_TECLADO_WASD_SPACE.prg) — prueba histórica.
+- [TEST02 — WASD, retracción automática](PRG/jugables/OILS_WELL_TEST02_WASD_AUTO_RETRACCION.prg) — prueba histórica.
+- **[TEST03 — última versión funcional, controles WASD](PRG/jugables/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg)** — referencia para continuar.
 
-**IMPORTANTE:** los ocho PRG de `PRG/visores_estaticos` son *visores de mapas*, no el juego. Los tres PRG de **jugabilidad modificada** están en el ZIP completo (`prg/controles/`) y también pueden regenerarse desde una copia compatible del PRG original mediante el script de `herramientas/` (verificar SHA-256 antes de aplicarlos).
+Cada PRG pesa **38.405 bytes** y fue recuperado del paquete histórico verificando su SHA-256. Los ocho PRG de nivel que solo servían como visores estáticos se eliminaron. No se retiraron los niveles, mapas, previews ni sus colores.
 
-Se conservan la organización del paquete histórico, los documentos anteriores y el manifiesto original; estos archivos individuales son una incorporación adicional, no una sustitución.
+### Niveles y documentación
+
+- [Proyecto LVLLVL TEST03, ocho frames](LVLLVL/OILS_WELL_8_FRAMES_TEST03_COLORES_POR_NIVEL.json).
+- [Ocho JSON por nivel](LVLLVL/niveles/).
+- [Guía para programadores](docs/GUIA_PROGRAMADORES.md).
+- [Mapa de memoria](docs/MAPA_DE_MEMORIA.md).
+- [Historial de controles y hashes](docs/CONTROLES_Y_TESTS.md).
+- [Reconstructor de los PRG desde la versión COPY SOFT](herramientas/reconstruir_prg_controles.py).
+
+**Procedencia:** el ZIP y los visores retirados siguen disponibles en el historial de Git, pero no forman parte de la versión actual del repositorio. El manifiesto anterior también sirve como registro histórico de archivos y hashes.
