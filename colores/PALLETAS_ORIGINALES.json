@@ -1,0 +1,186 @@
+[
+  {
+    "level": 1,
+    "vic": {
+      "border": 11,
+      "background": 11,
+      "multi1": 1,
+      "multi2": 5
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 11,
+    "colorRamBottomRows": 9,
+    "overlayColors": [
+      7,
+      7,
+      4,
+      7
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  },
+  {
+    "level": 2,
+    "vic": {
+      "border": 0,
+      "background": 0,
+      "multi1": 7,
+      "multi2": 6
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 12,
+    "colorRamBottomRows": 9,
+    "overlayColors": [
+      1,
+      1,
+      7,
+      1
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  },
+  {
+    "level": 3,
+    "vic": {
+      "border": 0,
+      "background": 0,
+      "multi1": 7,
+      "multi2": 1
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 10,
+    "colorRamBottomRows": 10,
+    "overlayColors": [
+      1,
+      1,
+      3,
+      1
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  },
+  {
+    "level": 4,
+    "vic": {
+      "border": 0,
+      "background": 0,
+      "multi1": 7,
+      "multi2": 3
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 10,
+    "colorRamBottomRows": 14,
+    "overlayColors": [
+      7,
+      7,
+      4,
+      7
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  },
+  {
+    "level": 5,
+    "vic": {
+      "border": 0,
+      "background": 0,
+      "multi1": 7,
+      "multi2": 8
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 10,
+    "colorRamBottomRows": 10,
+    "overlayColors": [
+      1,
+      1,
+      5,
+      1
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  },
+  {
+    "level": 6,
+    "vic": {
+      "border": 0,
+      "background": 0,
+      "multi1": 1,
+      "multi2": 4
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 13,
+    "colorRamBottomRows": 10,
+    "overlayColors": [
+      7,
+      7,
+      3,
+      7
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  },
+  {
+    "level": 7,
+    "vic": {
+      "border": 0,
+      "background": 0,
+      "multi1": 8,
+      "multi2": 14
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 10,
+    "colorRamBottomRows": 14,
+    "overlayColors": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  },
+  {
+    "level": 8,
+    "vic": {
+      "border": 0,
+      "background": 0,
+      "multi1": 14,
+      "multi2": 10
+    },
+    "spriteMulticolor": [
+      7,
+      3
+    ],
+    "colorRamTopRows": 15,
+    "colorRamBottomRows": 15,
+    "overlayColors": [
+      3,
+      3,
+      7,
+      6
+    ],
+    "multicolor_cells": 991,
+    "hires_cells": 9
+  }
+]
