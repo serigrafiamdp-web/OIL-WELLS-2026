@@ -24,7 +24,7 @@ Se eliminaron los ocho PRG que solo mostraban niveles. Para revisar mapas, utili
 
 ## Prueba LVLLVL
 
-Importar `lvllvl/OILS_WELL_8_FRAMES_LVLLVL_TEST03_COLORES_POR_NIVEL.json` y comprobar:
+Importar `LVLLVL/OILS_WELL_8_FRAMES_TEST03_COLORES_POR_NIVEL.json` y comprobar:
 - grid 40×25 y ocho frames;
 - mapa e índices originales (no reorganizados);
 - tileset de 256 entradas, originales 0–127;
@@ -39,7 +39,7 @@ En Python (desde raíz del proyecto):
 python tools/verificar_recursos.py
 ```
 
-El verificador toma `manifest/archivos_sha256.json` y compara tamaño y SHA-256 de cada recurso recuperado.
+El verificador comprueba los SHA-256 exactos de los **tres PRG jugables**, las longitudes de los mapas/charset/colores y la estructura básica de los nueve JSON LVLLVL. El archivo `manifest/archivos_sha256.json` es un inventario **histórico** y contiene referencias a recursos retirados: no usarlo como inventario de la rama actual. Esta prueba estructural no sustituye una sesión de VICE.
 
 ## Reproducción desde el PRG de origen
 
