@@ -4,7 +4,7 @@
 
 **Juego:** Oil's Well, Commodore 64. **Trabajo:** modificación experimental de controles y extracción de los ocho mapas editables a LVLLVL. El código de juego no fue reescrito ni portado; se estudiaron regiones 6510 concretas y se generaron pruebas.
 
-Los archivos fuente (original COPY SOFT) y las variantes TEST de juego se verifican por SHA-256. Los visores estáticos por nivel son **PRG independientes**, no son versiones jugables del juego.
+Las tres variantes TEST de juego están publicadas en `PRG/jugables/` y verificadas por SHA-256. Los ocho antiguos visores estáticos PRG ya no se conservan en el árbol actual; los mapas y niveles LVLLVL sí.
 
 ## Reproducción rápida
 
@@ -16,10 +16,10 @@ Los archivos fuente (original COPY SOFT) y las variantes TEST de juego se verifi
 5. Preservar índices y dimensiones si se pretende después reinyectar datos al juego.
 
 ### B. Probar mapas en VICE
-Abrir los 8 archivos `PRG/visores_estaticos/OILS_WELL_NIVEL_XX_ESTATICO.prg` en VICE. Son visualizadores creados en el proyecto; su imagen no reproduce el raster split, sprites ni objetos dinámicos del original.
+Los antiguos visores estáticos fueron retirados; para inspeccionar mapas se deben usar los JSON en `LVLLVL/` y las imágenes en `previews/`.
 
 ### C. Regenerar controles
-El PRG del juego original no se distribuye en este repositorio. Partir de una copia propia del PRG COPY SOFT que tenga el SHA-256 esperado. Ejecutar:
+Los tres PRG modificados están listos en `PRG/jugables/`. Si necesitás reconstruirlos desde el PRG original, partir de una copia propia del PRG COPY SOFT que tenga el SHA-256 esperado. Ejecutar:
 
 ```bash
 python herramientas/reconstruir_prg_controles.py "oils well.prg" --salida "PRG/pruebas"
