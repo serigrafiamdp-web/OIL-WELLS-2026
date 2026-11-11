@@ -9,7 +9,7 @@
 ## Prueba del último PRG de jugabilidad
 
 ```text
-PRG: prg/controles/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg
+PRG: PRG/jugables/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg
 LOAD address: $0801
 BASIC: 10 SYS(2084)
 ```
@@ -18,15 +18,9 @@ En VICE: montar/cargar el PRG como programa C64, ejecutar `RUN` si corresponde y
 
 **Advertencia:** el PRG original de referencia es COPY SOFT; otros empaquetados o cracks pueden desplazar las direcciones.
 
-## Prueba de los visores
+## Visores estáticos retirados
 
-```text
-prg/visores-estaticos/OILS_WELL_NIVEL_01_ESTATICO.prg
-...
-prg/visores-estaticos/OILS_WELL_NIVEL_08_ESTATICO.prg
-```
-
-Cada visor es un PRG independiente con BASIC `10 SYS2061`, carga en `$0801`, imagen estática en `$6000` y charset en `$7000`, color blanco temporal. Sin lógica de juego. La simulación de CPU 6510 confirmó la copia del mapa/charset; registrar PASS visual en VICE solo si se ejecuta realmente.
+Se eliminaron los ocho PRG que solo mostraban niveles. Para revisar mapas, utilizar `LVLLVL/`, `mapas/` y `previews/`. Los únicos PRG del repositorio son los tres TEST jugables.
 
 ## Prueba LVLLVL
 
