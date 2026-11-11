@@ -4,14 +4,14 @@
 - [x] Localización de los ocho mapas y del charset original en el PRG COPY SOFT.
 - [x] Extracción de 8 niveles a un proyecto LVLLVL de 8 frames.
 - [x] Extracción de colores estáticos por nivel (TEST03 gráficos).
-- [x] Ocho exportaciones JSON individuales y ocho visores PRG estáticos.
+- [x] Ocho exportaciones JSON individuales. Los ocho PRG visores históricos se retiraron (no eran jugables).
 - [x] Tres modificaciones de controles como parches reproducibles desde la fuente verificada.
 - [x] Documentación técnica en español.
 
 ## Próxima fase — validación
 - [ ] Abrir el proyecto combinado en LVLLVL; verificar color y mapa de cada frame.
 - [ ] Probar cada JSON individual y volver a guardar sin alterar índices.
-- [ ] Probar los ocho visores estáticos en VICE.
+- [ ] Verificar la importación de los ocho niveles JSON en LVLLVL y conservar capturas de referencia.
 - [ ] Repetir con condiciones controladas las pruebas TEST01/02/03 de controles.
 - [ ] Registrar resultados en una matriz TEST/PASS/FAIL.
 
