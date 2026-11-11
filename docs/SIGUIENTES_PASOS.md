@@ -6,7 +6,7 @@
 - [x] Recuperar los ocho mapas originales, capas 40×25 y charset.
 - [x] Recuperar Color RAM por nivel y JSON LVLLVL TEST03 con ocho frames.
 - [ ] Verificar nuevamente TEST03 jugable en VICE x64sc y guardar una captura/VSF con versión.
-- [ ] Probar los ocho visores estáticos en VICE; no confundir simulación con PASS visual.
+- [x] Retirar los ocho PRG visores estáticos y dejar únicamente TEST01, TEST02 y TEST03 jugables.
 - [ ] Comprobar importación de los ocho frames en la versión concreta de LVLLVL usada por el proyecto.
 
 ## Fase 2 — Editor gráfico a juego real
