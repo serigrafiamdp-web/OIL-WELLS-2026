@@ -2,7 +2,7 @@
 
 ## Base
 
-`oils well.prg` (COPY SOFT, 38.405 bytes) es el punto de partida de los prototipos. Los tres PRG de controles son de **igual longitud**: 38.405 bytes. Los parches se pueden reproducir mediante `herramientas/reconstruir_prg_controles.py`.
+`oils well.prg` (COPY SOFT, 38.405 bytes) es el punto de partida de los prototipos. Los tres PRG de controles son de **igual longitud**: 38.405 bytes. Los parches se pueden reproducir mediante `herramientas/reconstruir_prg_controles.py`. Los binarios modificados están disponibles directamente en [`PRG/jugables/`](../PRG/jugables/).
 
 | Prueba | Archivo / objetivo | SHA-256 de salida | Estado documentado |
 | --- | --- | --- | --- |
