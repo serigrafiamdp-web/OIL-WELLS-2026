@@ -10,11 +10,10 @@
 | Charset ampliado | `charset/TILESET_256_CHAR_PADDED.bin` | 2.048 B |
 | Color RAM por nivel | `colores/LEVEL_XX_COLOR_RAM_40x25.bin` | 1.000 B |
 | Paletas originales | `colores/PALLETAS_ORIGINALES.json` | Ocho entradas |
-| Proyecto de ocho frames | `lvllvl/OILS_WELL_8_FRAMES_LVLLVL_TEST03_COLORES_POR_NIVEL.json` | 8 frames |
-| Nivel individual | `lvllvl/niveles/LEVEL_XX.json` | 1 frame |
-| Visor de nivel | `prg/visores-estaticos/OILS_WELL_NIVEL_XX_ESTATICO.prg` | 2.198 B |
+| Proyecto de ocho frames | `LVLLVL/OILS_WELL_8_FRAMES_TEST03_COLORES_POR_NIVEL.json` | 8 frames |
+| Nivel individual | `LVLLVL/niveles/NIVEL_XX.json` | 1 frame |
 
-`XX` va del `01` al `08`.
+`XX` va del `01` al `08`. Los antiguos PRG visores de nivel fueron retirados: los únicos PRG de la rama actual son los tres de `PRG/jugables/`.
 
 ### Mapa
 
