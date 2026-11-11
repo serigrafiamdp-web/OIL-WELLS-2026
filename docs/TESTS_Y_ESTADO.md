@@ -6,7 +6,7 @@
 
 | Test | Archivo | Cambio | Estado |
 | --- | --- | --- | --- |
-| TEST00 | `docs/ANALISIS_CONTROL_TEST00.txt` | Localización de accesos a `$DC01` y rutas de control, sin cambiar PRG | Análisis estático |
+| TEST00 | `docs/MAPA_DE_MEMORIA.md` y `docs/CONTROLES_Y_TESTS.md` | Localización de accesos a `$DC01` y rutas de control, sin cambiar PRG | Análisis estático documentado |
 | TEST01 | `PRG/jugables/OILS_WELL_TEST01_TECLADO_WASD_SPACE.prg` | Primer control por teclado W/A/S/D y SPACE en experimento | Versión histórica, no master |
 | TEST02 | `PRG/jugables/OILS_WELL_TEST02_WASD_AUTO_RETRACCION.prg` | Experimento con retracción automática / ajustes de control | Versión histórica, no master |
 | **TEST03** | **`PRG/jugables/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg`** | **W sustituye FIRE para retraer; S avanza/baja; A/D lateral; SPACE desactivado; joystick conservado** | **PASS funcional informado** |
