@@ -22,15 +22,15 @@ El juego original utiliza división por raster entre **bitmap HIRES** y **caract
 
 Por eso **TEST03 colores** significa una extracción más fiel de las **tablas de colores estáticos**, no una copia píxel por píxel de la pantalla de juego.
 
-## PRG visualizadores
+## Datos originales y visores históricos
 
-Los ocho `PRG/visores_estaticos/*` son pequeños ejecutables propios (2.198 bytes cada uno) que muestran mapas estáticos. Se pueden montar en VICE. No incorporan el motor del juego, la lógica de puntuación ni todas las características raster del original.
+Los ocho PRG que mostraban solo mapas estáticos fueron retirados del repositorio actual. Se conservaron los ocho mapas originales de 1.024 bytes en `mapas/`, sus vistas 40×25 y los niveles editables de LVLLVL. Los únicos PRG publicados son los tres jugables de `PRG/jugables/`.
 
-**Los últimos 24 bytes de cada mapa de 1024 B** se conservaron en los PRG; no corresponden a las 1000 celdas visibles y deben preservarse si se hace roundtrip.
+**Los últimos 24 bytes de cada mapa de 1024 B** permanecen en los archivos `mapas/LEVEL_XX_MAP_1024_ORIGINAL.bin`; no corresponden a las 1000 celdas visibles y deben preservarse si se hace roundtrip.
 
 ## Validaciones conocidas
 
 - Todos los JSON individuales tienen 1 frame de 40×25 y tileset 8×8.
 - El JSON combinado tiene 8 frames.
-- Los PRG visores se reconstruyeron y verificaron byte a byte contra el archivo histórico `OILS_WELL_8_PRG_ESTATICOS_TEST01.zip`.
-- No hay registro de PASS visual final en una ejecución nueva de VICE para todos los artefactos.
+- Los ocho antiguos visores son un hito histórico retirado, no un recurso disponible en la rama actual.
+- TEST03 controles tiene PASS funcional informado en las sesiones originales; queda pendiente una nueva regresión completa en VICE.
