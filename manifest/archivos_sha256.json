@@ -1,0 +1,230 @@
+{
+  "charset/TILESET_256_CHAR_PADDED.bin": {
+    "bytes": 2048,
+    "sha256": "52a17541623fb9f519014280d44fd074c1deb3a3d5cc000dd6eaf6b03584ba81"
+  },
+  "charset/TILESET_REAL_128_CHAR_9A00.bin": {
+    "bytes": 1024,
+    "sha256": "58fbc9f1b13b5254a35d918a103044ba0ba620df96d2cdfee812c1d89f35e87f"
+  },
+  "colores/LEVEL_01_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "6ef47e8d8be1c7d3193e030f3850d68d63ae1590ad23fd4bffb3ef737c03a810"
+  },
+  "colores/LEVEL_02_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "daf85a0746f3174af9f541b7058d08c582e124c17ae9fb6940e4a3208f994c55"
+  },
+  "colores/LEVEL_03_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "024bcaa34078edeb98f7c615f9cf12068f6200d79b89c4faadb3cfb2f9f65c64"
+  },
+  "colores/LEVEL_04_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "9397d5b3c9f2906591be943f35caf013de965dd9961177b143d63b9aeba789ff"
+  },
+  "colores/LEVEL_05_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "a4b75f9f9bef22119f14aefb53228117c5da673007aeea6b4a2fbd368c4af236"
+  },
+  "colores/LEVEL_06_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "ac2f9465d4fe4daa736584de6800c10b5374d67c6a94d12ad90f511c0ea7eb19"
+  },
+  "colores/LEVEL_07_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "befd17cb88a90572ba9d0e178ba4ad113b946b3dc1af7cc09e32a7973dfd3d22"
+  },
+  "colores/LEVEL_08_COLOR_RAM_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "ea914d7cc107fb5f48235343d444d2f2bc99c206a8838c2d53055fea70cf7891"
+  },
+  "colores/PALLETAS_ORIGINALES.json": {
+    "bytes": 2773,
+    "sha256": "3d287d69f7fc1b99f54dcf91194001955ab6544c62cc3d4fd799c7fa291702eb"
+  },
+  "lvllvl/OILS_WELL_8_FRAMES_LVLLVL_TEST03_COLORES_POR_NIVEL.json": {
+    "bytes": 233771,
+    "sha256": "4d70f35f50a2c9840df00fc21eef40eeb2643ca7b534dc8fc01c305acf3069ef"
+  },
+  "lvllvl/niveles/LEVEL_01.json": {
+    "bytes": 61431,
+    "sha256": "ab1df8c797a39ade6ec14f63edb06785b32785d437cd20065c9c9bc24a05e6d4"
+  },
+  "lvllvl/niveles/LEVEL_02.json": {
+    "bytes": 61440,
+    "sha256": "7593bdf446f3b6eceff17a5a01e25c89c89cd71bdeb0aa2834039847d8601c99"
+  },
+  "lvllvl/niveles/LEVEL_03.json": {
+    "bytes": 62337,
+    "sha256": "28696a733bb48aba6e1950d2ae0587c90626c43325193ef1a753b77f06dd0d2e"
+  },
+  "lvllvl/niveles/LEVEL_04.json": {
+    "bytes": 62301,
+    "sha256": "e55ec89f701823543ca2c6429eeb57f6d8e59eba31329e88ebd5590e0a801984"
+  },
+  "lvllvl/niveles/LEVEL_05.json": {
+    "bytes": 62580,
+    "sha256": "c678162459c9591a695c9489d8011014d67ce7441543308fb69ede6c9bcfa852"
+  },
+  "lvllvl/niveles/LEVEL_06.json": {
+    "bytes": 62562,
+    "sha256": "6c0bb506931310a63707d90b80d768ffd89fca9c361f13ad10d458ef2020db2d"
+  },
+  "lvllvl/niveles/LEVEL_07.json": {
+    "bytes": 62564,
+    "sha256": "878ad5bf1f00bec8f239a4427efb5067d016b51b2238a7a07f527c20b1cfb66a"
+  },
+  "lvllvl/niveles/LEVEL_08.json": {
+    "bytes": 62539,
+    "sha256": "acf11666733626dd0e3c79df1e03f3a91d55f863415e5c91deacede77ba37e01"
+  },
+  "mapas/LEVEL_01_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "bf30b28f6887bdffc92d9f5a8bc11c98de0f467c3d280858d477f26f921efe29"
+  },
+  "mapas/LEVEL_01_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "2841a1ab1fe991411e68295dcaca6d7e94bbb9d074d5fe41b70e698ec828cf94"
+  },
+  "mapas/LEVEL_02_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "88d260fdbea62bc155b662ce6525a827e7ec0ad4408df9c8fb9cb4edce26398c"
+  },
+  "mapas/LEVEL_02_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "c7d4fc59d6d1d39d69bd8c0551947c62652669a5b1ede8625982a1710e6a8ae4"
+  },
+  "mapas/LEVEL_03_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "7a2b33e9069f64ff18b2bf47f4d006564b65c94378b777d89fb2bed6661ae65c"
+  },
+  "mapas/LEVEL_03_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "e043ccbac1e3d9a607c697e3caf7fc87119fe60cd171d6943be12bdf261c5ab2"
+  },
+  "mapas/LEVEL_04_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "88cfd5b8df4f68f50d62e9c96325b4410a6aa29cf5b72b34a5461e861986e2a2"
+  },
+  "mapas/LEVEL_04_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "a98db60edd1be45ddfc1282ee20f8f74f85888129bf30aa0290befaa903f53bf"
+  },
+  "mapas/LEVEL_05_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "31792282339fed4e5fa9c16ce579f9611e40da04dab6fd869ca211b5d56fc2c1"
+  },
+  "mapas/LEVEL_05_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "929db40e8ea3402dc49478bda8fde7738be58b1ebc85e338439d8561face649f"
+  },
+  "mapas/LEVEL_06_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "6e0ff53e201453fe445d9096896b32c13d4a94a8d3e85511b0ad70c771a8d706"
+  },
+  "mapas/LEVEL_06_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "b722657bdde59f688ac1ad4626d3174c80531aef1afb88a33591d9e8a3af4c38"
+  },
+  "mapas/LEVEL_07_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "8d44549f1eabfda81a4f6fef1d24d9fdb2492363a7cca2e1966826cd824283ba"
+  },
+  "mapas/LEVEL_07_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "469458247401810adbe62e2f3f7f2a34edbaf42a0afd694e02dff36e113d4b60"
+  },
+  "mapas/LEVEL_08_MAP_1024_ORIGINAL.bin": {
+    "bytes": 1024,
+    "sha256": "419a661384a6e9a69379cbc647025fcb453b591465bae2867019dbca81261404"
+  },
+  "mapas/LEVEL_08_MAP_40x25.bin": {
+    "bytes": 1000,
+    "sha256": "b0827be4fc60fc6e7b8a51d3e8c2f91be977b2cd5744f01adba68c2f7af00617"
+  },
+  "previews/VISTA_8_NIVELES.png": {
+    "bytes": 47712,
+    "sha256": "28f3265f85e67a6d45237e3e1ab6521e820f6f38828738913f89aae331c97301"
+  },
+  "previews/VISTA_PALETAS_8_NIVELES.png": {
+    "bytes": 37140,
+    "sha256": "b9bf82864857f29d47d1d5d3f871669e0605be0008ca885fa218508f291b552e"
+  },
+  "previews/niveles/LEVEL_01.png": {
+    "bytes": 6216,
+    "sha256": "c51b0f3499b76de538309b37d4305fdcd463af5655d6602f33bab2feef5d8bee"
+  },
+  "previews/niveles/LEVEL_02.png": {
+    "bytes": 6586,
+    "sha256": "0bf608a35e97b2de752b43e48641b407d6f4ac841b29c2d6ed6c2b4662a004d8"
+  },
+  "previews/niveles/LEVEL_03.png": {
+    "bytes": 5273,
+    "sha256": "41aa9e19317939f4dae3eabec987a41710c39e0d62db2e35974bb3ccf8aed401"
+  },
+  "previews/niveles/LEVEL_04.png": {
+    "bytes": 5174,
+    "sha256": "46542c09ac98c47214d9009c95da4ba5a4f52d127043e4950861bef71a630276"
+  },
+  "previews/niveles/LEVEL_05.png": {
+    "bytes": 4189,
+    "sha256": "055037a0a1cfb6797d6c7a8d7ff6fc7453505b3a7fe96138c67f7b3b6b6ce10c"
+  },
+  "previews/niveles/LEVEL_06.png": {
+    "bytes": 4254,
+    "sha256": "c3262942d9b3ebb62c5013826187b3f52475da96ba486e345558ef6f5e95350c"
+  },
+  "previews/niveles/LEVEL_07.png": {
+    "bytes": 5376,
+    "sha256": "70579f11719ebf031e32b82996260d64ad59e3791ba8487c4c6ab3c059dbb84b"
+  },
+  "previews/niveles/LEVEL_08.png": {
+    "bytes": 5239,
+    "sha256": "5bdf5039c706f3d0fe89422e724f07d90bf914b1c2fa8bebf2f3181061990abb"
+  },
+  "prg/controles/OILS_WELL_TEST01_TECLADO_WASD_SPACE.prg": {
+    "bytes": 38405,
+    "sha256": "effbffa3146218d26615ee318da0b1ea667e102b5d52f05eaf3cfa4627f4bbd0"
+  },
+  "prg/controles/OILS_WELL_TEST02_WASD_AUTO_RETRACCION.prg": {
+    "bytes": 38405,
+    "sha256": "10fa3a4e16670516352fbef6c8b06aba3b483f3cb486ffcad1abc1d406ed7122"
+  },
+  "prg/controles/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg": {
+    "bytes": 38405,
+    "sha256": "10d771c17498342a975d4fca2d706a6ed77a5c956b5d00db650a27d0aa568269"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_01_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "6ae91773bffdb153614d9302333ab93af6b9ea26e2ea9d88f63ac5fb57b02e35"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_02_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "6f13debb11435da6ed230b9de347f160ff33f76de4d2a28f42cad3b4873eb905"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_03_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "6cf47733a7634bad6d5daf687a8efdfde2d7544cf1716a36d749dad2a6c2ea50"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_04_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "d06a217096c8e440ba12ea9dae8108fe51d63c54a7d8cdb3a6a0dca1d56ff628"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_05_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "f30770a62ba93e4e2636bf6f5b2f9632676efadba3369ad4b0e07e928ac97089"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_06_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "5bd70a2011fb665351b82240eea60ca9e52adbe7e3aa3aeff72c4cef7c0a565d"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_07_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "92b3355984107005960008df3d0ea98d9a46823f7b8f0afc72045ecab591aa42"
+  },
+  "prg/visores-estaticos/OILS_WELL_NIVEL_08_ESTATICO.prg": {
+    "bytes": 2198,
+    "sha256": "94503c5bc381469aba5dd59e1def47ed81860ead3de27ad8618f277359f79231"
+  }
+}
