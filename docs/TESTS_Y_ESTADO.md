@@ -7,9 +7,9 @@
 | Test | Archivo | Cambio | Estado |
 | --- | --- | --- | --- |
 | TEST00 | `docs/ANALISIS_CONTROL_TEST00.txt` | Localización de accesos a `$DC01` y rutas de control, sin cambiar PRG | Análisis estático |
-| TEST01 | `prg/controles/OILS_WELL_TEST01_TECLADO_WASD_SPACE.prg` | Primer control por teclado W/A/S/D y SPACE en experimento | Versión histórica, no master |
-| TEST02 | `prg/controles/OILS_WELL_TEST02_WASD_AUTO_RETRACCION.prg` | Experimento con retracción automática / ajustes de control | Versión histórica, no master |
-| **TEST03** | **`prg/controles/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg`** | **W sustituye FIRE para retraer; S avanza/baja; A/D lateral; SPACE desactivado; joystick conservado** | **PASS funcional informado** |
+| TEST01 | `PRG/jugables/OILS_WELL_TEST01_TECLADO_WASD_SPACE.prg` | Primer control por teclado W/A/S/D y SPACE en experimento | Versión histórica, no master |
+| TEST02 | `PRG/jugables/OILS_WELL_TEST02_WASD_AUTO_RETRACCION.prg` | Experimento con retracción automática / ajustes de control | Versión histórica, no master |
+| **TEST03** | **`PRG/jugables/OILS_WELL_TEST03_W_FIRE_SAD_MOVIMIENTO.prg`** | **W sustituye FIRE para retraer; S avanza/baja; A/D lateral; SPACE desactivado; joystick conservado** | **PASS funcional informado** |
 
 Los nombres de archivo TEST01 y TEST02 describen fases de desarrollo; para retomar la jugabilidad elegir TEST03, sin suponer que los anteriores son más completos.
 
@@ -23,7 +23,7 @@ Los nombres de archivo TEST01 y TEST02 describen fases de desarrollo; para retom
 | --- | --- | --- |
 | Extracción TEST00 | Candidatos de charset y bloques binarios 1.024 bytes | Recuperado |
 | Mapas TEST01 | 8 niveles de 1.024 B + vistas 40×25 y charset | Estructuralmente verificado |
-| Visores estáticos TEST01 | 8 PRG de 2.198 B con una pantalla fija | Simulación 6510 PASS; ejecución real VICE no documentada |
+| Visores estáticos TEST01 | 8 PRG de 2.198 B, solo mapa fijo; retirados del árbol actual | Históricos, sin PASS en VICE |
 | LVLLVL TEST01 | 8 niveles, índices de char originales y colores provisionales | Exportador histórico; no es el master de colores |
 | LVLLVL TEST02 | 8 frames en modo multicolor, ajustes sobre TEST01 | Paso intermedio |
 | **LVLLVL TEST03** | **JSON de 8 frames, Color RAM y colores D020–D023 por nivel** | **PASS de recuperación y exportación** |
@@ -46,7 +46,7 @@ El **JSON TEST03** es la referencia más completa para trabajar los niveles en L
 - Probar joystick 1 original y verificar que los enemigos y cambios de nivel se mantengan.
 - Comparar sha256 del PRG antes y después de editarlo.
 - Para gráficos: importar JSON TEST03 a LVLLVL; recorrer frames 1–8 y comprobar mapa, tileset y color original por nivel.
-- Para los ocho visores PRG, tomar captura real antes de registrar PASS de VICE.
+- Los visores PRG fueron retirados; los mapas originales y JSON LVLLVL siguen disponibles.
 
 ## Identificación del original
 
