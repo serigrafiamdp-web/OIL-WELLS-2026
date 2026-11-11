@@ -124,3 +124,21 @@ Los hashes de los archivos recuperados figuran en `manifest/archivos_sha256.json
 ## Guía para continuar
 
 Para retomar el trabajo, empezar por **[TESTS_Y_ESTADO](docs/TESTS_Y_ESTADO.md)** y **[MAPA_DE_MEMORIA](docs/MAPA_DE_MEMORIA.md)**. Preservar los PRG que dieron PASS, crear **TEST04** para cualquier cambio de jugabilidad posterior y verificarlo en VICE antes de sustituir nada. Para gráficos, la referencia actual es **LVLLVL TEST03 colores por nivel**.
+
+## Archivos accesibles directamente desde GitHub
+
+Además del **ZIP completo** indicado más arriba, estos materiales se publicaron individualmente para facilitar su revisión y modificación por otro programador:
+
+- [Proyecto LVLLVL con los ocho niveles y colores TEST03](LVLLVL/OILS_WELL_8_FRAMES_TEST03_COLORES_POR_NIVEL.json).
+- [Ocho JSON separados por nivel](LVLLVL/niveles/), desde `NIVEL_01.json` hasta `NIVEL_08.json`.
+- [Ocho PRG visualizadores estáticos](PRG/visores_estaticos/), uno por nivel (2.198 bytes cada uno).
+- [Guía práctica para programadores](docs/GUIA_PROGRAMADORES.md).
+- [Mapa técnico y direcciones de memoria](docs/MAPA_TECNICO.md).
+- [Controles, versiones y SHA-256](docs/CONTROLES_Y_TESTS.md).
+- [Formato de gráficos y limitaciones](docs/FORMATOS_Y_LIMITACIONES.md).
+- [Plan de mejoras](docs/ROADMAP.md).
+- [Reconstructor verificado de TEST01/TEST02/TEST03](herramientas/reconstruir_prg_controles.py).
+
+**IMPORTANTE:** los ocho PRG de `PRG/visores_estaticos` son *visores de mapas*, no el juego. Los tres PRG de **jugabilidad modificada** están en el ZIP completo (`prg/controles/`) y también pueden regenerarse desde una copia compatible del PRG original mediante el script de `herramientas/` (verificar SHA-256 antes de aplicarlos).
+
+Se conservan la organización del paquete histórico, los documentos anteriores y el manifiesto original; estos archivos individuales son una incorporación adicional, no una sustitución.
