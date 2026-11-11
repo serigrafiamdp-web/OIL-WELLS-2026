@@ -136,5 +136,14 @@ Cada PRG pesa **38.405 bytes** y fue recuperado del paquete histórico verifican
 - [Mapa de memoria](docs/MAPA_DE_MEMORIA.md).
 - [Historial de controles y hashes](docs/CONTROLES_Y_TESTS.md).
 - [Reconstructor de los PRG desde la versión COPY SOFT](herramientas/reconstruir_prg_controles.py).
+- [Verificador de integridad de recursos actuales](tools/verificar_recursos.py).
 
-**Procedencia:** el ZIP y los visores retirados siguen disponibles en el historial de Git, pero no forman parte de la versión actual del repositorio. El manifiesto anterior también sirve como registro histórico de archivos y hashes.
+**Procedencia:** el ZIP y los visores retirados siguen disponibles en el historial de Git, pero no forman parte de la versión actual del repositorio. El archivo `manifest/archivos_sha256.json` es un registro **histórico**, no un inventario de lo publicado hoy.
+
+### Para continuar como coder
+
+1. Empezar con **[la guía del programador](docs/GUIA_PROGRAMADORES.md)** y **[el historial de PASS](docs/TESTS_Y_ESTADO.md)**.
+2. Cargar el PRG **TEST03** en VICE x64sc y reconfirmar W/S/A/D, joystick y cambios de nivel. El PASS documentado procede de las sesiones anteriores; no equivale a una ejecución nueva.
+3. Ejecutar `python3 tools/verificar_recursos.py` desde la raíz para revisar la integridad de los recursos actuales (no sustituye a VICE).
+4. Conservar TEST03 sin sobrescribir y llamar **TEST04** al siguiente PRG modificado, documentando offsets, bytes, SHA-256, comportamiento observado y PASS/FAIL.
+5. Los gráficos LVLLVL son una **rama independiente**: sus mapas editables todavía no están integrados de vuelta al PRG funcional.
